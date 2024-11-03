@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TapMangoSmsRateLimiter", "TapMangoSmsRateLimiter\TapMangoSmsRateLimiter.csproj", "{BEE36102-999D-42D2-92DF-EFE577AA06F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TapMangoSmsRateLimiterTests", "TapMangoSmsRateLimiterTests\TapMangoSmsRateLimiterTests.csproj", "{0312DFC8-A8D2-4576-A33C-ED38B6A699CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapMangoRateLimiterLoadTest", "TapMangoRateLimiterLoadTest\TapMangoRateLimiterLoadTest.csproj", "{44675FE9-B359-431B-868E-EA708610BAB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEE36102-999D-42D2-92DF-EFE577AA06F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE36102-999D-42D2-92DF-EFE577AA06F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE36102-999D-42D2-92DF-EFE577AA06F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE36102-999D-42D2-92DF-EFE577AA06F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0312DFC8-A8D2-4576-A33C-ED38B6A699CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0312DFC8-A8D2-4576-A33C-ED38B6A699CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0312DFC8-A8D2-4576-A33C-ED38B6A699CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0312DFC8-A8D2-4576-A33C-ED38B6A699CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44675FE9-B359-431B-868E-EA708610BAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44675FE9-B359-431B-868E-EA708610BAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44675FE9-B359-431B-868E-EA708610BAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44675FE9-B359-431B-868E-EA708610BAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B742322E-378A-43DC-B595-7DBC99F9D0F3}
+	EndGlobalSection
+EndGlobal

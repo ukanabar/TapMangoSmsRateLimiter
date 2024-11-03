@@ -1,0 +1,6 @@
+@TapMangoSmsRateLimiter_HostAddress = http://localhost:5077
+
+GET {{TapMangoSmsRateLimiter_HostAddress}}/swagger/
+Accept: application/json
+
+###

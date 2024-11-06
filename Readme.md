@@ -60,3 +60,7 @@ Using docker ps get kafka container id
 	Verify Data
 
 		SELECT * FROM rate_limit.sms_rate_limits;
+		
+		
+Note: Due to time constraint, i have not developer reporting service and angular ui but now once data is there in Cassandra, one can create another set 
+of rest apis which can filter records based on accountId, phonenumber or date time and create a angular ui to display that

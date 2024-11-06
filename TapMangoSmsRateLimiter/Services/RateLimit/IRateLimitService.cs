@@ -1,4 +1,4 @@
-﻿namespace TapMangoSmsRateLimiter.Services
+﻿namespace TapMangoSmsRateLimiter.Services.RateLimit
 {
     public interface IRateLimitService
     {

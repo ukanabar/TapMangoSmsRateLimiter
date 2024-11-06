@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TapMangoSmsRateLimiter.Services;
+using TapMangoSmsRateLimiter.Services.RateLimit;
 
 namespace TapMangoSmsRateLimiter.Controllers
-{   
+{
     [ApiController]
     [Route("api/[controller]")]
     public class SmsController : ControllerBase

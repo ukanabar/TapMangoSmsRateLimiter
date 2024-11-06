@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
 using TapMangoSmsRateLimiter.Controllers;
-using TapMangoSmsRateLimiter.Services;
+using TapMangoSmsRateLimiter.Services.RateLimit;
 
 namespace TapMangoSmsRateLimiterTests
 {

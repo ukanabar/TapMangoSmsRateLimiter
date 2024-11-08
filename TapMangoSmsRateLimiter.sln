@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TapMangoSmsRateLimiterTests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TapMangoRateLimiterLoadTest", "TapMangoRateLimiterLoadTest\TapMangoRateLimiterLoadTest.csproj", "{44675FE9-B359-431B-868E-EA708610BAB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapMangoRateLimitDataConsumerService", "RateLimitDataConsumerWorkerService\TapMangoRateLimitDataConsumerService.csproj", "{87179DCA-65D6-4D6E-8E23-F837D041FA5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapMangoRateLimitDataConsumerService", "TapMangoRateLimitDataConsumerService\TapMangoRateLimitDataConsumerService.csproj", "{87179DCA-65D6-4D6E-8E23-F837D041FA5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

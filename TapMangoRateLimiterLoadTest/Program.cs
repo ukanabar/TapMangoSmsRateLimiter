@@ -16,7 +16,7 @@ public class Program
     {
         var random = new Random();
         var httpClient = new HttpClient();
-        var accountIds = new[] { 1, 2 };
+        var accountIds = new[] { 1, 2 , 5 ,7 };
 
         var step = Step.Create("Randomized_Test", async context =>
         {

@@ -34,6 +34,11 @@ Using docker ps get kafka container id
 		docker exec -it <kafka_container_name_or_id> kafka-console-consumer --bootstrap-server localhost:9092 --topic <kafka_topic_name> --from-beginning
 
 		Ex. docker exec -it c138ca35ba41 kafka-console-consumer --bootstrap-server localhost:9092 --topic sms_rate_limit --from-beginning
+	
+	Delete Kafka topic
+	    docker exec -it <kafka-container-name> kafka-topics --bootstrap-server <kafka-broker>:<port> --delete --topic <topic-name>
+		
+		Ex. docker exec -it c138ca35ba41 kafka-topics --bootstrap-server localhost:9092 --delete --topic sms_rate_limit
 
 # Cassandra Setup
 

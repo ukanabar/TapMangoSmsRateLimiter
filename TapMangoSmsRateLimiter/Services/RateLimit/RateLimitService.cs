@@ -19,7 +19,7 @@ namespace TapMangoSmsRateLimiter.Services.RateLimit
         {
             _redisService = redisService;
             _rateLimitOptions = rateLimitOptions.Value;
-            _rateLimitTimeout = TimeSpan.FromSeconds(1);
+            _rateLimitTimeout = TimeSpan.FromMinutes(5);
             _kafkaProducerService = kafkaProducerService;
             _kafkaTopic = kafkaOptions.Value.Topic;
         }

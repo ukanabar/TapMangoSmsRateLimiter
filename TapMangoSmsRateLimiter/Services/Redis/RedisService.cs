@@ -6,30 +6,27 @@ namespace TapMangoSmsRateLimiter.Services.Redis
     public class RedisService : IRedisService
     {
         private readonly IConnectionMultiplexer _redis;
-        private readonly RateLimitOptions _rateLimitOptions;
-        public RedisService(IConnectionMultiplexer redis, IOptions<RateLimitOptions> rateLimitOptions)
+        private readonly IDatabase _db;
+        public RedisService(IConnectionMultiplexer redis)
         {
-            _redis = redis;
-            _rateLimitOptions = rateLimitOptions.Value;
+            _redis = redis;            
+            _db = _redis.GetDatabase();
         }
 
         public async Task<long> GetKeyCountAsync(string key)
         {
-            var db = _redis.GetDatabase();
-            var count = await db.StringGetAsync(key);
+            var count = await _db.StringGetAsync(key);
             return count.HasValue ? (long)count : 0;
         }
 
         public async Task<long> IncrementKeyAsync(string key)
         {
-            var db = _redis.GetDatabase();
-            return await db.StringIncrementAsync(key);
+            return await _db.StringIncrementAsync(key);
         }
 
         public async Task SetKeyExpirationAsync(string key, TimeSpan expiration)
         {
-            var db = _redis.GetDatabase();
-            await db.KeyExpireAsync(key, expiration);
+            await _db.KeyExpireAsync(key, expiration);
         }
 
         public async Task<bool> CanSendMessageAsync(int accountId, long phoneNumber, AccountRateLimit accountLimits, TimeSpan expiration)
